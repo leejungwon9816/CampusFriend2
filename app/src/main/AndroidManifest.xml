@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.campusfriend01">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CampusFriend01">
+        <activity android:name=".chat.ChatActivity" />
+        <activity android:name=".setting.SettingActivity" />
+        <activity android:name=".auth.JoinActivity" />
+        <activity android:name=".auth.LoginActivity" />
+        <activity android:name=".auth.IntroActivity" />
+        <activity android:name=".club.Club_WriteActivity" />
+        <activity android:name=".club.ClubInsideActivity" />
+        <activity android:name=".club.ClubEditActivity" />
+        <activity android:name=".board.BoardEditActivity" />
+        <activity android:name=".board.BoardInsideActivity" />
+        <activity android:name=".board.BoardWriteActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
